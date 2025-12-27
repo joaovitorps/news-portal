@@ -3,3 +3,64 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --font-family: "Archivo", sans-serif;
+  --text-xs: 400 14px/160% var(--font-family);
+  --text-sm: 600 14px/145% var(--font-family);
+  --text-normal: 14px/140% var(--font-family);
+  --text-lg: 800 16px/140% var(--font-family);
+  --text-xl: 800 24px/160% var(--font-family);
+
+  --brand-color-light: #60a5fa;
+  --brand-color-dark: #1d4ed8;
+  --bg-color: #0f172a;
+  --stroke-color: #1e293b;
+  --text-color-primary: #f1f5f9;
+  --text-color-secondary: #cbd5e1;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+  font: var(--text-normal);
+  max-width: 1280px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--brand-color-light);
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-column {
+  grid-auto-flow: column;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+  row-gap: 80px;
+}
+
+.container {
+  padding: 40px 32px 80px;
+}
+
+.tag {
+  position: relative;
+  inset-block-start: 50px;
+
+  background-color: var(--brand-color-dark);
+  font: 500 10px/12 var(--font-family);
+  letter-spacing: 4%;
+  padding: 4px 8px;
+  border-radius: 4px;
+}

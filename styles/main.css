@@ -1,0 +1,76 @@
+#highlights {
+  grid-template-areas:
+    "A B C"
+    "A D E";
+  gap: 16px;
+}
+
+#highlights img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#highlights div {
+  position: relative;
+}
+
+#a {
+  grid-area: A;
+  width: 608px;
+}
+
+#a > div {
+  position: absolute;
+  bottom: 0;
+
+  padding-bottom: 24px;
+  padding-inline: 24px;
+
+  background: linear-gradient(to bottom, #ffffff00, #000000);
+}
+
+#a div div:nth-child(1) {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+#a p {
+  font: 800 24px/135% var(--font-family);
+}
+
+#b {
+  grid-area: B;
+}
+
+#b > div,
+#c > div,
+#d > div,
+#e > div {
+  position: absolute;
+  bottom: 0;
+
+  padding-bottom: 12px;
+  padding-inline: 12px;
+
+  background: linear-gradient(to bottom, #ffffff00, #000000);
+}
+
+#b p,
+#c p,
+#d p,
+#e p {
+  font: 800 14px/140% var(--font-family);
+}
+
+#c {
+  grid-area: C;
+}
+
+#d {
+  grid-area: D;
+}
+
+#e {
+  grid-area: E;
+}
