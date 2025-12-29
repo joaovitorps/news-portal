@@ -10,6 +10,13 @@
 }
 
 #a {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 50% 0 0;
+    background: linear-gradient(to bottom, transparent 0%, #020617 100%);
+  }
+
   grid-area: A;
   width: 608px;
   height: 416px;
@@ -28,8 +35,6 @@
 
   padding-bottom: 24px;
   padding-inline: 24px;
-
-  background: linear-gradient(to bottom, #ffffff00, #000000);
 }
 
 #a div span {
@@ -45,6 +50,18 @@
   grid-area: B;
 }
 
+#b,
+#c,
+#d,
+#e {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, #020617 100%);
+  }
+}
+
 #b > div,
 #c > div,
 #d > div,
@@ -54,8 +71,6 @@
 
   padding-bottom: 12px;
   padding-inline: 12px;
-
-  background: linear-gradient(to bottom, #ffffff00, #020617);
 }
 
 #b > div span,
