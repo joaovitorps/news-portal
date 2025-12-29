@@ -76,14 +76,21 @@ header.header-title {
   justify-content: space-between;
 }
 
-header.header-title > a {
-  align-items: center;
-  column-gap: 4px;
-}
+header.header-title {
+  a {
+    align-items: center;
+    column-gap: 4px;
 
-header.header-title > a > img {
-  height: 16px;
-  width: 16px;
+    span {
+      background-image: url(../assets/icons/ArrowRight.svg);
+      height: 16px;
+      width: 16px;
+    }
+
+    &:hover span {
+      background-image: url(../assets/icons/ArrowRightHover.svg);
+    }
+  }
 }
 
 img {
