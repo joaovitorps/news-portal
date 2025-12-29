@@ -55,12 +55,44 @@ a:hover {
 }
 
 .tag {
-  position: relative;
-  inset-block-start: 50px;
+  position: absolute;
 
   background-color: var(--brand-color-dark);
-  font: 500 10px/12 var(--font-family);
+  font: 500 10px/12px var(--font-family);
   letter-spacing: 4%;
   padding: 4px 8px;
   border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header.header-title {
+  font: var(--text-sm);
+  color: var(--text-color-secondary);
+  padding-top: 12px;
+  justify-content: space-between;
+}
+
+header.header-title > a {
+  align-items: center;
+  column-gap: 4px;
+}
+
+header.header-title > a > img {
+  height: 16px;
+  width: 16px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

@@ -5,12 +5,6 @@
   gap: 16px;
 }
 
-#highlights img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 #highlights div {
   position: relative;
 }
@@ -18,6 +12,14 @@
 #a {
   grid-area: A;
   width: 608px;
+  height: 416px;
+}
+
+#b,
+#c,
+#d,
+#e {
+  height: 200px;
 }
 
 #a > div {
@@ -30,9 +32,9 @@
   background: linear-gradient(to bottom, #ffffff00, #000000);
 }
 
-#a div div:nth-child(1) {
-  position: relative;
-  margin-bottom: 8px;
+#a div span {
+  left: 24px;
+  top: -28px;
 }
 
 #a p {
@@ -53,7 +55,15 @@
   padding-bottom: 12px;
   padding-inline: 12px;
 
-  background: linear-gradient(to bottom, #ffffff00, #000000);
+  background: linear-gradient(to bottom, #ffffff00, #020617);
+}
+
+#b > div span,
+#c > div span,
+#d > div span,
+#e > div span {
+  left: 12px;
+  top: -28px;
 }
 
 #b p,
