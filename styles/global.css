@@ -67,6 +67,9 @@ a:hover {
 }
 
 header.header-title {
+  height: 32px;
+  align-items: center;
+  border-top: 1px var(--stroke-color) solid;
   font: var(--text-sm);
   color: var(--text-color-secondary);
   padding-top: 12px;
@@ -89,10 +92,10 @@ img {
   object-fit: cover;
 }
 
-p {
+p,
+h3 {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
   overflow: hidden;
   text-overflow: ellipsis;
 }

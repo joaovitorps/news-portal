@@ -1,0 +1,22 @@
+#other-news {
+  row-gap: 24px;
+  align-content: start;
+}
+
+#other-news div.grid {
+  row-gap: 32px;
+}
+
+#other-news div.grid > div.grid-flow-column {
+  justify-content: start;
+  column-gap: 15px;
+}
+
+#other-news div.grid > div.grid-flow-column > img {
+  width: 72px;
+  height: 72px;
+}
+
+#other-news div.grid > .grid-flow-column div.grid > p {
+  -webkit-line-clamp: 2;
+}

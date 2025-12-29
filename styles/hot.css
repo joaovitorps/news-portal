@@ -1,6 +1,5 @@
 #hot {
   row-gap: 24px;
-  border-top: 1px var(--stroke-color) solid;
   padding-bottom: 24px;
 }
 
@@ -14,6 +13,7 @@
 
 #hot > div.grid.grid-flow-column > div.grid > p {
   font: var(--text-lg);
+  -webkit-line-clamp: 3;
 }
 
 #hot > div.grid.grid-flow-column > div.grid > div {

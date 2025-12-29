@@ -71,6 +71,7 @@
 #d p,
 #e p {
   font: 800 14px/140% var(--font-family);
+  -webkit-line-clamp: 3;
 }
 
 #c {

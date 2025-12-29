@@ -1,3 +1,49 @@
 #ai-highlights {
-  column-gap: 32px;
+  row-gap: 24px;
+}
+
+#ai-highlights > div.grid {
+  row-gap: 32px;
+}
+
+#ai-highlights > div.grid > div.grid.grid-flow-column {
+  column-gap: 16px;
+}
+
+#ai-highlights > div.grid > div.grid.grid-flow-column > img {
+  width: 176px;
+}
+
+#ai-highlights > div.grid > div.grid.grid-flow-column > div.grid {
+  margin-block: 6px;
+  row-gap: 8px;
+}
+
+#ai-highlights
+  > div.grid
+  > div.grid.grid-flow-column
+  > div.grid
+  > div:first-child {
+  height: 20px;
+}
+
+#ai-highlights
+  > div.grid
+  > div.grid.grid-flow-column
+  > div.grid
+  > div.grid
+  > h3 {
+  font: var(--text-lg);
+  -webkit-line-clamp: 2;
+}
+
+#ai-highlights
+  > div.grid
+  > div.grid.grid-flow-column
+  > div.grid
+  > div.grid
+  > p {
+  font: var(--text-xs);
+  color: var(--text-color-secondary);
+  -webkit-line-clamp: 4;
 }
