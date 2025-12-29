@@ -4,21 +4,24 @@
   padding-bottom: 24px;
 }
 
-#hot div.grid {
+#hot > div.grid.grid-flow-column {
   column-gap: 16px;
 }
 
-#hot div.grid div {
+#hot > div.grid.grid-flow-column > div.grid {
+  row-gap: 8px;
+}
+
+#hot > div.grid.grid-flow-column > div.grid > p {
+  font: var(--text-lg);
+}
+
+#hot > div.grid.grid-flow-column > div.grid > div {
   position: relative;
   height: 160px;
-  width: 292px;
 }
 
-#hot div.grid div span {
+#hot > div.grid.grid-flow-column > div.grid > div > span {
   top: 8px;
   left: 8px;
-}
-
-#hot div.grid div p {
-  font: var(--text-lg);
 }
